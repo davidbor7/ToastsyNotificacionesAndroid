@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToastActivity">
+
+    <Spinner
+        android:id="@+id/sp_orientacion_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOrientacionHorizontal"
+        app:layout_constraintStart_toEndOf="@+id/textViewOrientacionHorizontal"
+        app:layout_constraintTop_toTopOf="@+id/textViewOrientacionHorizontal" />
+
+    <Spinner
+        android:id="@+id/sp_tipo_de_orientacion_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOrientacionVertical"
+        app:layout_constraintStart_toEndOf="@+id/textViewOrientacionVertical"
+        app:layout_constraintTop_toTopOf="@+id/textViewOrientacionVertical" />
+
+    <TextView
+        android:id="@+id/textViewOrientacionVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/alineacionVertical"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrientacionHorizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrientacionHorizontal" />
+
+    <EditText
+        android:id="@+id/editTextMargenHorizontal"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/vacio"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMargenHorizontal"
+        app:layout_constraintStart_toEndOf="@+id/textViewMargenHorizontal"
+        app:layout_constraintTop_toTopOf="@+id/textViewMargenHorizontal" />
+
+    <EditText
+        android:id="@+id/editTextMargenVertical"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/vacio"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMargenVertical"
+        app:layout_constraintStart_toEndOf="@+id/textViewMargenVertical"
+        app:layout_constraintTop_toTopOf="@+id/textViewMargenVertical"
+        app:layout_constraintVertical_bias="0.677" />
+
+    <EditText
+        android:id="@+id/editTextTextoToast"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/vacio"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTextoToast"
+        app:layout_constraintStart_toEndOf="@+id/textViewTextoToast"
+        app:layout_constraintTop_toTopOf="@+id/textViewTextoToast" />
+
+    <TextView
+        android:id="@+id/textViewMargenHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/margenHorizontal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewMargenVertical"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMargenVertical" />
+
+    <TextView
+        android:id="@+id/textViewMargenVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/margenVertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <TextView
+        android:id="@+id/textViewTextoToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/texto"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewMargenHorizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMargenHorizontal" />
+
+    <TextView
+        android:id="@+id/textViewOrientacionHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/alineacionHorizontal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTextoToast"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextoToast" />
+
+    <Button
+        android:id="@+id/btn_Mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/mostrar"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrientacionVertical"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrientacionVertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

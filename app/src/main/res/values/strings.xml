@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ToastsApp</string>
+    <string name="toast">TOAST</string>
+    <string name="notificaciones">NOTIFICACIONES</string>
+    <string name="margenVertical">Margen Vertical:</string>
+    <string name="margenHorizontal">Margen Horizontal:</string>
+    <string name="tituloToast">TÍTULO DEL TOAST:</string>
+    <string name="mostrar">MOSTRAR</string>
+    <string name="alineacion">ALINEACIÓN VERTICAL</string>
+    <string name="alineacion2">ALINEACIÓN HORIZONTAL</string>
+    <string name="texto">Texto:</string>
+    <string name="alineacionHorizontal">Alineación Horizontal:</string>
+    <string name="alineacionVertical">Alineación Vertical:</string>
+    <string name="tituloNotificacion">Título Notificación:</string>
+    <string name="textoNotificacion">Texto Notificación:</string>
+    <string name="segundos">Segundos:</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="segundos0">0</string>
+
+
+    <string name="vacio"></string>
+
+    <string-array name="arrayOrientacionHorizontal">
+        <item>Izquierda</item>
+        <item>Centro</item>
+        <item>Derecha</item>
+    </string-array>
+
+    <string-array name="arrayOrientacionVertical">
+        <item>Arriba</item>
+        <item>Centro</item>
+        <item>Abajo</item>
+    </string-array>
+</resources>
